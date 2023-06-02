@@ -1,0 +1,13 @@
+<div class="heading"><h1>CryptoTracker: Real-time Cryptocurrency Information and Market Data</h1></div>
+<h2>List of all Exchanges</h2>
+<div class="info" *ngFor="let exchange of ArrayOfExchanges">
+    <div class="pic">
+        <img src={{exchange.image}} alt="">
+    </div>
+    <div class="information">
+        <p>Name : {{exchange.name}},</p>
+        <p>Established in Year : {{exchange.year_established}},</p>
+        <p>Country : {{exchange.country}}</p>
+    </div>
+    <button><a href={{exchange.url}} target="_blank">More..</a></button>
+</div>

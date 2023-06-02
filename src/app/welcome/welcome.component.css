@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.heading{
+    height: 30vh;
+    background-color: rgba(95, 192, 160, 0.589);
+    width: 80%;
+    margin-inline: 10%;
+    margin-top: 2%;
+    display: grid;
+    /* place-content: end; */
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+    color: white;
+    opacity: 1;
+    background-image: url('https://www.imf.org/-/media/Images/IMF/Blog/Migrated/BLOG-2099x600-Crypto-da-kuk-iStock-by-Getty-Images-iStock-1317587887.ashx');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1vmax;
+}
+.heading h1 {
+  margin: 4%;
+}
+h2{
+    color: white;
+    opacity: 0.9;
+    margin-inline: 10%;
+}
+.info{
+    height: 110px;
+    width: 80%;
+    margin-inline: 10%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(38, 235, 143) , rgb(0, 128, 117));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    margin-block: 10px;
+}
+.pic{
+   
+    background-color: pink;
+    margin-inline: 30px;
+}
+
+.information{
+    /* margin-inline: 30px;  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1vmax;
+}.information p {
+    margin: 10px;
+}
+
+.info a{
+  color: white;
+  text-decoration: none;
+}
+
+.info button{
+    position: absolute;
+    margin-left: 70%;
+}

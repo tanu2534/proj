@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body, html{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color: rgb(34, 34, 34);
+}
+button{
+    background-color: rgba(2, 245, 55, 0.616);
+    border-color: transparent;
+    /* margin: 30px; */
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+}

@@ -1,0 +1,9 @@
+{
+  "form": {
+    "language": "Idioma",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "submit": "Enviar",
+    "image": " imagen"
+  }
+}

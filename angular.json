@@ -27,7 +27,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/animation-gsap.js",
+              "./node_modules/gsap/src/all.js"
+            ]
           },
           "configurations": {
             "production": {

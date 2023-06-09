@@ -10,20 +10,23 @@
     margin-inline: 10%;
     margin-block: 5vh;
 }
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text], input[type=email], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    background-color: rgba(94, 94, 94, 0.61);
+    color: white;
+    opacity: 0.8;
   }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+  
+   button{
     background-color: #13f09f;
     color: white;
     padding: 12px 20px;
@@ -33,14 +36,26 @@ input[type=text], input[type=email], select, textarea {
     /* margin-left: 45%; */
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  
   input[type=submit]:hover {
     background-color: #45a049;
   }
+  input[type=file]{
+    margin-top: 3%;
+    display: block;
+  }
   
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
     background-color: transparent;
     padding: 20px;
+  }
+
+  input #file-upload-button{
+    background-color: lawngreen;
+  }
+
+  button{
+    display: block;
+    margin-top: 4%;
   }

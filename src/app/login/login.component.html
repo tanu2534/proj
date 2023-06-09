@@ -1,23 +1,32 @@
 <div class="center">
     <div class="container">
-        <form action="action_page.php">
+      <form (submit)="onSubmit()" enctype="multipart/form-data"> 
+           <div>
+             <label>{{ 'foor.language' | translate }}:</label>
+             <select [(ngModel)]="language" name="language"(change)="onLnChange()">
+               <option value="en">English</option>
+               <option value="fr">French</option>
+               <option value="es">Spanish</option>
+               <option value="ar">Arabic</option>
+               <option value="tm">Tamil</option>
+               <option value="hn">Hindi</option>
+
+             </select>
+           </div>
       
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="fname">{{ 'foor.name' | translate }}</label>
+          <input type="text" id="name" name="fname" [(ngModel)]="name" required>
       
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <!-- <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select> -->
-      
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Write your Email..">
-          <input type="submit" value="Submit">
+          <label for="email">{{ 'foor.email' | translate }}</label>
+          <input type="email" id="email" name="email" [(ngModel)]="email" required>
+
+          <label for="img">{{ 'foor.image' | translate }} </label>
+          <!-- <div class="custom-button">Select Image</div> -->
+          <input type="file" id="imageUpload" name="image" #ImageInput (change)="OnSelect($event)"  accept=".jpg, .jpeg, .png" >
+
+         
+
+          <button type="submit">{{ 'foor.submit' | translate }}</button>
       
         </form>
       </div>

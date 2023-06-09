@@ -1,0 +1,11 @@
+{
+  "form": {
+    "language": "Language",
+    "name": "Name",
+    "email": "Email",
+    "submit": "Submit",
+    "image" : "Image"
+  }
+}
+
+  
